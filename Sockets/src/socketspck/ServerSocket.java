@@ -34,7 +34,7 @@ public class ServerSocket {
 		msg = (String)msgReceived.readObject();
 		//verifica se existe alguma mensagem
 		if (msg != ""){
-			//Informa endereço do cliente e mensagem enviada
+			//Informa endereço do cliente e mensagem recebida do cliente
 			System.out.println(connection.getRemoteSocketAddress() + ": " + msg);
 		}
 		
