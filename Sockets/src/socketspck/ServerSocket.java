@@ -35,7 +35,7 @@ public class ServerSocket {
 		//verifica se existe alguma mensagem
 		if (msg != ""){
 			//Informa endereço do cliente e mensagem recebida do cliente
-			System.out.println(connection.getRemoteSocketAddress() + ": " + msg);
+			System.out.println(connection.getInetAddress() + ": " + msg);
 		}
 		
 		//envia mensagem para cliente informando que conexão será encerrada
